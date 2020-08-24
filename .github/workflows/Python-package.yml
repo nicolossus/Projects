@@ -12,8 +12,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy: 
-      matrix: 
+    strategy:
+      matrix:
         python-version: [3.x]
 
     steps:
@@ -29,4 +29,4 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest YOURFILE.py
+        pytest test_calculator.py
